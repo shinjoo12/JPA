@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+    <persistence-unit name="jpatest">
+        <class>com.ohgiraffers.mapping.section01.entity.Member</class>
+        <class>com.ohgiraffers.mapping.section02.column.Member</class>
+        <class>com.ohgiraffers.mapping.section03.primarykey.table.Member</class>
+        <class>com.ohgiraffers.mapping.section04.enumtype.Member</class>
+        <class>com.ohgiraffers.mapping.section05.access.Member</class>
+        <class>com.ohgiraffers.mapping.section05.property.Member</class>
+        <properties>
+<!--            //데이터베이스 연결하기 위한 정보-->
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/gangnam"/>
+            <property name="jakarta.persistence.jdbc.user" value="gangnam"/>
+            <property name="jakarta.persistence.jdbc.password" value="gangnam"/>
+
+
+<!--            쿼리 보여주기-->
+            <property name="hibernate.show_sql" value="true"/>
+<!--            쿼리 보기쉬운 형식으로 바꿔주기-->
+            <property name="hibernate.format_sql" value="true"/>
+<!--            ddl->데이터 구조변경      //-->
+<!--         <class>com.ohgiraffers.mapping.section01.entity.Member</class> 를 실행될때마다 new entity를 만들어라   -->
+<!--            create -> 기존에 있던거 삭제하고 생성-->
+
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+<!--        <property name="hibernate.hm2ddl.auto" value="update"/> -->
+        </properties>
+    </persistence-unit>
+</persistence>
