@@ -6,7 +6,10 @@
         <class>com.ohgiraffers.mapping.section03.primarykey.table.Member</class>
         <class>com.ohgiraffers.mapping.section04.enumtype.Member</class>
         <class>com.ohgiraffers.mapping.section05.access.Member</class>
-        <class>com.ohgiraffers.mapping.section05.property.Member</class>
+        <class>com.ohgiraffers.mapping.section06.idclass.Member</class>
+
+
+
         <properties>
 <!--            //데이터베이스 연결하기 위한 정보-->
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
